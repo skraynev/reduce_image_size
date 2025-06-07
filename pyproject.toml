@@ -1,0 +1,17 @@
+[project]
+name = "resize"
+version = "0.1.0"
+description = "Resize images"
+readme = "README.md"
+requires-python = ">=3.12, <=3.13"
+authors = [
+    {name = "sergejyit@gmail.com"},
+]
+dependencies = [
+    "Pillow>=11.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.7.4",
+]
