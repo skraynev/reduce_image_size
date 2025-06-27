@@ -1,5 +1,5 @@
 [project]
-name = "resize"
+name = "reduce-image-size"
 version = "0.1.0"
 description = "Resize images"
 readme = "README.md"
@@ -8,10 +8,17 @@ authors = [
     {name = "sergejyit@gmail.com"},
 ]
 dependencies = [
-    "Pillow>=11.2.1",
+    "Pillow",
 ]
 
 [dependency-groups]
 dev = [
-    "ruff>=0.7.4",
+    "ruff",
 ]
+
+[tool.ruff]
+target-version = "py312"
+lint.select = [
+    "ALL",
+]
+lint.ignore = ["D103", "D100", "D203", "D213"]
